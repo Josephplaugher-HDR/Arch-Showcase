@@ -1,0 +1,32 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div id="main">
+    <div class="major-section" id="cities">
+        <img alt="HDR" />
+        <br />
+        <p1 id="cities-header">
+            Click on each studio location to reveal more
+        </p1>
+        @for (int i = 0; i < @Model.Cities.Length; i++)
+        {
+            <p1 class="list-item">@Model.Cities[i]</p1>
+        }
+    </div>
+    <div class="major-section" id="status-key"></div>
+    <div class="major-section" id="date-columns">
+        @foreach (var year in @Model.Years)
+        {
+            <p1 class="list-item">@year</p1>
+            foreach (var month in @Model.Months)
+            {
+                <p1 class="list-item">@month</p1>
+            }
+        }
+    </div>
+    <div class="major-section" id="circular-graphic"></div>
+    <div class="major-section" id="image"></div>
+</div>

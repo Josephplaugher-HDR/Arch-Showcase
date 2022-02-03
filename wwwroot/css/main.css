@@ -1,0 +1,55 @@
+﻿body {
+    background-color: black;
+    color: white;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 17.5% 17.5% 17.5% 17.5% 30%;
+    grid-template-rows: 100px auto 100px;
+}
+
+.major-section {
+}
+
+#cities {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+#cities-header {
+    word-wrap: break-word;
+    color: yellow;
+}
+
+.list-item {
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+#status-key {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    border-left: 6px solid green;
+    height: 500px;
+    /*position: absolute;*/
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+
+#date-columns {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+#circular-graphic {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+#circular-graphic {
+    grid-column: 5 / span 1;
+    grid-row: 2 / 3;
+}
